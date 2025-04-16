@@ -1,8 +1,14 @@
 import requests
 from bs4 import BeautifulSoup
 
+# practice URL
+practice_url = "https://docs.google.com/document/d/e/2PACX-1vRMx5YQlZNa3ra8dYYxmv-QIQ3YJe8tbI3kqcuC7lQiZm-CSEznKfN_HYNSpoXcZIV3Y_O3YoUB1ecq/pub"
+
+# evaluation URL
+evaluation_url =  "https://docs.google.com/document/d/e/2PACX-1vQGUck9HIFCyezsrBSnmENk5ieJuYwpt7YHYEzeNJkIb9OSDdx-ov2nRNReKQyey-cwJOoEKUhLmN9z/pub"
+
 def get_data(url):
-    raw_data = requests.get("https://docs.google.com/document/d/e/2PACX-1vRMx5YQlZNa3ra8dYYxmv-QIQ3YJe8tbI3kqcuC7lQiZm-CSEznKfN_HYNSpoXcZIV3Y_O3YoUB1ecq/pub")
+    raw_data = requests.get(url)
     soup = BeautifulSoup(raw_data.content, "html.parser" )
     print(soup.prettify())
 
@@ -10,14 +16,8 @@ def get_data(url):
     print("This is all of the selected tags:")
     print(stuff_i_want)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-    get_data("")
+    get_data(practice_url)
+
+
 
