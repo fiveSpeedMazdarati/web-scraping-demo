@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f662932-20d7-42b5-bb01-30acd2d24b74" name="Changes" comment="added new parser, now getting proper page elements via Beautiful Soup">
+    <list default="true" id="6f662932-20d7-42b5-bb01-30acd2d24b74" name="Changes" comment="changed structure completely. Simplified some code, storing data in a list of tuples">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -25,14 +25,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
@@ -94,12 +94,21 @@
       <option name="project" value="LOCAL" />
       <updated>1744850601681</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="changed structure completely. Simplified some code, storing data in a list of tuples">
+      <option name="closed" value="true" />
+      <created>1745379085141</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745379085141</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="retrieve data, scraping and parsing experiments" />
     <MESSAGE value="added new parser, now getting proper page elements via Beautiful Soup" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new parser, now getting proper page elements via Beautiful Soup" />
+    <MESSAGE value="changed structure completely. Simplified some code, storing data in a list of tuples" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed structure completely. Simplified some code, storing data in a list of tuples" />
   </component>
 </project>
